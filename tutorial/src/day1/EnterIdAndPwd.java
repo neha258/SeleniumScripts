@@ -6,8 +6,13 @@ public class EnterIdAndPwd {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
+System.setProperty("webdriver.chrome.driver","C:\\Users\\Lenovo\\Downloads\\selenium\\chromedriver.exe");
 WebDriver driver=new ChromeDriver();
-driver.manage().window()
+driver.manage().window().maximize();
+String url = "https://mail.google.com";
+driver.get (url);
+driver.close();
 	}
 
 }
